@@ -430,3 +430,25 @@ body p {
   left: 0;
   background: url(/img/bottom_decor.png) repeat-x;
 }
+
+@media screen and (min-width: 1200px) and (max-width: 1300px) {
+  .next {
+    right: -30px;
+  }
+
+  .prev {
+    left: -30px;
+  }
+}
+
+@media screen and (min-width: 991px) and (max-width: 1199px) {
+  .mainhead {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 0px;
+  }
+
+  .logoname {
+    margin-bottom: 20px;
+  }
+}
