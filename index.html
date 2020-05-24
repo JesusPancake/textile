@@ -14,18 +14,18 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   </head>
   <body>
-    <header class="hero">
+    <header class="header">
       <div class="container">
-        <div class="info">
-          <div class="phone">
-            <span class="number"><p>тел. 274-76-78, 222-22-22</p></span>
+        <div class="header-info">
+          <div class="header-phone">
+            <span class="number"><p>тел. <a href="tel:8(812)274-76-78">274-76-78</a>, <a href="tel:8(812)222-22-22">222-22-22</a></p></span>
           </div>
-          <div class="adress">
+          <div class="header-adress">
             <span class="position"
               ><p>г. Санкт-Петербург, Невский пр., д. 5</p>
             </span>
           </div>
-          <form action="/search/" target="blank">
+          <form class="header-search" action="/search/" target="blank">
             <input type="hidden" name="searchid" value="808327">
             <input id="search" type="search" name="text" required placeholder="Поиск" >
           </form>
@@ -71,22 +71,22 @@
         </div>
       </div>
     </header>
-    <section class="container">
-      <div class="main-banner-bg">
-        <div class="main-image"><img src="img/dpkDi73uXNQ.jpg" alt="" />
-          <div class="banner-content">
-            <div>
-              <h2>Текстиль для дома</h2>
-            </div>
-            <div class="decor">
-              <img src="img/main_text_decor.png" alt="">
-            </div>
-            <div>
-              <p>Низкие цены, высокое качество!</p>
-            </div>
+    <div class="main-banner-bg">
+      <div class="container main-image"><img src="img/dpkDi73uXNQ.jpg" alt="" />
+        <div class="banner-content">
+          <div>
+            <h2>Текстиль для дома</h2>
           </div>
-         </div>
-      </div>
+          <div class="decor">
+            <img src="img/main_text_decor.png" alt="">
+          </div>
+          <div>
+            <p>Низкие цены, высокое качество!</p>
+          </div>
+        </div>
+       </div>
+    </div>
+    <section class="container">
         <h2 class="slider-title">
         Выбирайте самые лучшие подарки для самых близких вам людей!
         </h2>
@@ -127,10 +127,10 @@
         </div>  
     </div> 
       <div class="about">
-        <div class="woman">
+        <div class="about-img">
           <img src="img/woman_on_pillow.jpg" alt="">
         </div>
-        <div class="text">
+        <div class="about-text">
           <div class="description">
             <h2>Магазин Ивановского текстиля в Санкт-Петербурге</h2>
           </div>
@@ -175,7 +175,7 @@
       <div class="footer">
         <div class="info">
           <div class="phone">
-            <span class="number"><p>тел. 274-76-78, 222-22-22</p></span>
+            <span class="number"><p>тел. <a href="tel:8(812)274-76-78">274-76-78</a>, <a href="tel:8(812)222-22-22">222-22-22</a></p></span>
           </div>
           <div class="adress">
             <span class="position"
@@ -209,6 +209,15 @@
       infinite: true,
       slidesToShow: 3,
       slidesToScroll: 3
+    });
+  </script>
+  <script>
+    const btn = document.getElementById("openMenu");
+    const menu = document.getElementById("headerMenu");
+
+    btn.addEventListener("click", (e) => {
+      menu.classList.toggle("open");
+      btn.classList.toggle("opened");
     });
   </script>
   </body>
