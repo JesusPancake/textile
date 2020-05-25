@@ -530,20 +530,21 @@ body p {
   }
 
   .main-submenu-list {
-    display: none;
-    width: 180px;
-    top: 35px;
-    background: #fff;
-    border: 0;
-    box-shadow: 0 1px 5px 0 #93a7b7;
+    position: relative;
+     display: none; /* нун чтобы спрятать  */
+    width: 90%;
+    left: 14px;
+    top: 0px;
+    background: none;
+    box-shadow: none;
     background-clip: padding-box;
     z-index: 100;
-    right: 0;
   }
 
   .main-submenu-list a {
     display: block;
-    color: black;
+    background: #f8843c ;
+    color: white;
     text-decoration: none;
     padding: 6px 10px;
     text-shadow: none;
@@ -553,10 +554,12 @@ body p {
     line-height: 20px;
     border: 0;
     text-align: left;
+    border-radius: 35px;
+    transition: hight 0.3s ease-in-out;    
   }
 
   .main-submenu-item:hover {
-    background: #f8843c;
+    background: #ff6200;
     color: white;
   }
 
@@ -565,14 +568,7 @@ body p {
   }
 
   .main-submenu-list li::after {
-    background: #f8843c;
-    content: "";
-    display: block;
-    width: calc(100% - 12px);
-    height: 1px;
-
-    left: 6px;
-    z-index: 99;
+    background:none;
   }
   .burger-button {
     display: block;
