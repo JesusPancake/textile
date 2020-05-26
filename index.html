@@ -12,8 +12,10 @@
     />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="css/hamburgers.css">
   </head>
   <body>
+    <div class="backdrop" id="backdrop"></div>
     <header class="header">
       <div class="container">
         <div class="header-info">
@@ -35,7 +37,12 @@
             <img src="img/textiles_logo.jpg" alt="" />
             <h2 class="logo-description">Текстильная фабрика</h1>
           </div>
-          <button class="burger-button" id="openMenu"></button>
+          <!-- <button class="burger-button" id="openMenu"></button> -->
+          <button class="hamburger hamburger--squeeze" type="button" id="openMenu">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
           <ul class="main-menu" id="headerMenu">
             <li>
               <a class="main-menu-item main-menu-item-active" href="">Главная</a>
@@ -214,10 +221,12 @@
   <script>
     const btn = document.getElementById("openMenu");
     const menu = document.getElementById("headerMenu");
+    const bdr = document.getElementById("backdrop")
 
     btn.addEventListener("click", (e) => {
       menu.classList.toggle("open");
-      btn.classList.toggle("opened");
+      btn.classList.toggle("is-active");
+      bdr.classList.toggle("backdrop-shadow")
     });
   </script>
   </body>
