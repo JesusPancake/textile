@@ -622,4 +622,21 @@ body p {
     left: -5%;
   }
 
+  .about {
+    grid-template-columns: 100%;
+  }
+
+  .about-img {
+    display: flex;
+    justify-content: center;
+  }
+
+  .slider-stocks img {
+    width: 100%;
+  }
+
+  .slider-stocks a {
+    font-size: 17px;
+  }
+
 }
