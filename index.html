@@ -139,7 +139,7 @@
         </div>
         <div class="about-text">
           <div class="description">
-            <h2>Магазин Ивановского текстиля в Санкт-Петербурге</h2>
+            <h2>Магазин Ивановского текстиля <br> в Санкт-Петербурге</h2>
           </div>
           <div class="text-decoration">
             <img src="img/decor_orange.png" alt="">
@@ -215,7 +215,16 @@
       nextArrow: $('.next'),
       infinite: true,
       slidesToShow: 3,
-      slidesToScroll: 3
+      slidesToScroll: 3,
+      responsive: [
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
     });
   </script>
   <script>

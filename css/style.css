@@ -627,6 +627,10 @@ body p {
     justify-content: center;
   }
 
+  .about-text {
+    background-color: unset;
+  }
+
   .slider-stocks img {
     width: 100%;
   }
@@ -640,7 +644,6 @@ body p {
   .header-info {
     grid-template-columns: 100%;
     justify-content: center;
-    
   }
 
   .header-phone {
@@ -655,12 +658,12 @@ body p {
     justify-content: center;
     margin-bottom: 10px;
   }
-  
+
   .mainhead {
     align-items: center;
     justify-content: space-between;
   }
-   
+
   .logo-description {
     font-size: 24px;
   }
@@ -772,5 +775,21 @@ body p {
 
   .slider-title {
     font-size: 20px;
+  }
+  .main-slider-item {
+    height: auto;
+  }
+
+  .about {
+    grid-template-columns: 100%;
+  }
+
+  .about-img {
+    display: flex;
+    justify-content: center;
+  }
+
+  .about-text {
+    background-color: unset;
   }
 }
