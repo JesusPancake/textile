@@ -780,6 +780,16 @@ body p {
     height: auto;
   }
 
+  .next {
+    top: -15%;
+    right: 0;
+  }
+
+  .prev {
+    top: -15%;
+    left: 0;
+  }
+
   .about {
     grid-template-columns: 100%;
   }
